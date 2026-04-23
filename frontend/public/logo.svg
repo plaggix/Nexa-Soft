@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <defs>
+    <linearGradient id="gB" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2a5bd7"/>
+      <stop offset="100%" stop-color="#0e2a80"/>
+    </linearGradient>
+    <linearGradient id="gC" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3dd6f5"/>
+      <stop offset="100%" stop-color="#1a9fd4"/>
+    </linearGradient>
+  </defs>
+
+  <!--
+    The logo is two interlaced ribbon strands forming a 4-pointed star knot.
+    Strand A (dark blue):  top spike + bottom spike, weaving left-right
+    Strand B (cyan):       right spike + left spike, weaving top-bottom
+    At the center they cross: blue goes OVER cyan on top half, UNDER on bottom half
+  -->
+
+  <!-- ═══ STRAND A — DARK BLUE (vertical axis: top ↕ bottom) ═══ -->
+
+  <!-- Top spike -->
+  <path d="M100 14 L76 50 L88 50 L100 32 L112 50 L124 50 Z"
+        fill="url(#gB)" stroke="#091d60" stroke-width="1.2" stroke-linejoin="round"/>
+
+  <!-- Left side of top spike going into center -->
+  <path d="M76 50 L64 74 L80 82 L88 50 Z"
+        fill="url(#gB)" stroke="#091d60" stroke-width="1" stroke-linejoin="round"/>
+
+  <!-- Right side of top spike going into center -->
+  <path d="M124 50 L136 74 L120 82 L112 50 Z"
+        fill="url(#gB)" stroke="#091d60" stroke-width="1" stroke-linejoin="round"/>
+
+  <!-- Bottom spike -->
+  <path d="M100 186 L76 150 L88 150 L100 168 L112 150 L124 150 Z"
+        fill="url(#gB)" stroke="#091d60" stroke-width="1.2" stroke-linejoin="round"/>
+
+  <!-- Left side of bottom spike -->
+  <path d="M76 150 L64 126 L80 118 L88 150 Z"
+        fill="url(#gB)" stroke="#091d60" stroke-width="1" stroke-linejoin="round"/>
+
+  <!-- Right side of bottom spike -->
+  <path d="M124 150 L136 126 L120 118 L112 150 Z"
+        fill="url(#gB)" stroke="#091d60" stroke-width="1" stroke-linejoin="round"/>
+
+  <!-- ═══ STRAND B — CYAN (horizontal axis: left ↔ right) ═══ -->
+
+  <!-- Right spike -->
+  <path d="M186 100 L150 76 L150 88 L168 100 L150 112 L150 124 Z"
+        fill="url(#gC)" stroke="#0d6fa8" stroke-width="1.2" stroke-linejoin="round"/>
+
+  <!-- Top side of right spike -->
+  <path d="M150 76 L126 64 L118 80 L150 88 Z"
+        fill="url(#gC)" stroke="#0d6fa8" stroke-width="1" stroke-linejoin="round"/>
+
+  <!-- Bottom side of right spike -->
+  <path d="M150 124 L126 136 L118 120 L150 112 Z"
+        fill="url(#gC)" stroke="#0d6fa8" stroke-width="1" stroke-linejoin="round"/>
+
+  <!-- Left spike -->
+  <path d="M14 100 L50 76 L50 88 L32 100 L50 112 L50 124 Z"
+        fill="url(#gC)" stroke="#0d6fa8" stroke-width="1.2" stroke-linejoin="round"/>
+
+  <!-- Top side of left spike -->
+  <path d="M50 76 L74 64 L82 80 L50 88 Z"
+        fill="url(#gC)" stroke="#0d6fa8" stroke-width="1" stroke-linejoin="round"/>
+
+  <!-- Bottom side of left spike -->
+  <path d="M50 124 L74 136 L82 120 L50 112 Z"
+        fill="url(#gC)" stroke="#0d6fa8" stroke-width="1" stroke-linejoin="round"/>
+
+  <!-- ═══ CENTER WEAVE ═══ -->
+  <!-- Blue over cyan: top-center diamond -->
+  <path d="M80 82 L100 72 L120 82 L100 92 Z"
+        fill="url(#gB)" stroke="#091d60" stroke-width="1"/>
+
+  <!-- Cyan over blue: right-center diamond -->
+  <path d="M118 80 L128 100 L118 120 L108 100 Z"
+        fill="url(#gC)" stroke="#0d6fa8" stroke-width="1"/>
+
+  <!-- Blue over cyan: bottom-center diamond -->
+  <path d="M80 118 L100 108 L120 118 L100 128 Z"
+        fill="url(#gB)" stroke="#091d60" stroke-width="1"/>
+
+  <!-- Cyan over blue: left-center diamond -->
+  <path d="M82 80 L72 100 L82 120 L92 100 Z"
+        fill="url(#gC)" stroke="#0d6fa8" stroke-width="1"/>
+
+  <!-- Center core — blue on top -->
+  <path d="M92 100 L100 92 L108 100 L100 108 Z"
+        fill="url(#gB)" stroke="#091d60" stroke-width="0.8"/>
+</svg>
