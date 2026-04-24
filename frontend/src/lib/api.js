@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: '/api',
+  baseURL: 'https://nexa-soft-backend.onrender.com',
   timeout: 10000,
   headers: { 'Content-Type': 'application/json' },
 });
